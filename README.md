@@ -58,7 +58,7 @@
   ### 1. AI → ERPNext Middleware API
     One custom whitelisted method,
     e.g.:POST /api/method/ai_assistant.process_command
-    This API will: Accept a generic payload from your AI 
+    This API will: Accept a generic payload from  AI 
     like: {
      "action": "create",
     "doctype": "Employee",
@@ -75,7 +75,7 @@
      for example: “Approve leave request” → Needs a workflow action.
                   “Generate salary slip for August” → Needs a server script.
                   “Send sales order email” → Needs ERPNext’s built-in method.
-    For these, you build custom whitelisted methods in ERPNext and expose them as APIs
+    For these,  build custom whitelisted methods in ERPNext and expose them as APIs
      e.g.:POST /api/method/hrms.leave_approval.approve
           POST /api/method/accounts.salary.create_slip
 
