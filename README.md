@@ -22,3 +22,7 @@
          Example: login is itself a method API.
 
       General form:  POST /api/method/{path.to.method}
+#### 4. Report APIs
+
+      ERPNext exposes reports (Standard + Custom).
+      Query/Script Report:  GET /api/method/frappe.desk.query_report.run?report_name=Receivable%20Summary&filters={"customer":"CUST-0001"}
