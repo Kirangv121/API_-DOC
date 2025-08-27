@@ -4,6 +4,7 @@
 1. Authentication APIs
 2. Resource (Document) API
      The main CRUD API for any DocType.
+   
    For ->
       List documents ->   GET /api/resource/{doctype}
 
