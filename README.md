@@ -5,7 +5,7 @@
 #### 2. Resource (Document) API
         The main CRUD API for any DocType.
    
-   For ->
+     For ->
       List documents ->   GET /api/resource/{doctype}
 
       Create document ->  POST /api/resource/{doctype}
@@ -19,8 +19,6 @@
 
 #### 3. Method API -> Runs whitelisted Python functions.
 
-Example: login is itself a method API.
+         Example: login is itself a method API.
 
-General form:
-
-POST /api/method/{path.to.method}
+      General form:  POST /api/method/{path.to.method}
