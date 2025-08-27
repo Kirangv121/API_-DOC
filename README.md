@@ -54,6 +54,33 @@
 
 
 
+# Then what do you need to build?
+  ### 1. AI → ERPNext Middleware API
+    One custom whitelisted method,
+    e.g.:POST /api/method/ai_assistant.process_command
+    This API will: Accept a generic payload from your AI 
+    like: {
+     "action": "create",
+    "doctype": "Employee",
+    "fields": {
+    "employee_name": "John Doe",
+    "department": "Sales"
+     }
+    }
+
+
+### 2. Optional: Custom Logic APIs
+
+     Sometimes CRUD is not enough
+     for example: “Approve leave request” → Needs a workflow action.
+                  “Generate salary slip for August” → Needs a server script.
+                  “Send sales order email” → Needs ERPNext’s built-in method.
+    For these, you build custom whitelisted methods in ERPNext and expose them as APIs
+     e.g.:POST /api/method/hrms.leave_approval.approve
+          POST /api/method/accounts.salary.create_slip
+
+
+
 
 
 
