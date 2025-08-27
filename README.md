@@ -1,9 +1,9 @@
 # API_-DOC
 
-#### ERPNext In-built APIs
-1. Authentication APIs
-2. Resource (Document) API
-     The main CRUD API for any DocType.
+### ERPNext In-built APIs
+#### 1. Authentication APIs
+#### 2. Resource (Document) API
+        The main CRUD API for any DocType.
    
    For ->
       List documents ->   GET /api/resource/{doctype}
@@ -16,3 +16,11 @@
                          { "customer_group": "SMB" }
 
       Delete document ->  DELETE /api/resource/{doctype}/{name}
+
+#### 3. Method API -> Runs whitelisted Python functions.
+
+Example: login is itself a method API.
+
+General form:
+
+POST /api/method/{path.to.method}
